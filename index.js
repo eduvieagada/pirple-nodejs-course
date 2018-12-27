@@ -32,7 +32,7 @@ httpsServer.listen(config.httpsPort, function () {
 var router = {
     'ping': handlers.ping,
     'users': handlers.users
-}
+};
 
 var unifiedServer = function (req, res) {
     var parsedUrl = url.parse(req.url, true);
